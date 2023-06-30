@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>My app.wasm 2</title>
+    <base href="/" />
+    <link href="_content/app.lib/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="_content/app.lib/css/app.css" rel="stylesheet" />
+    <!-- Change blazor css to fluent (from trial project)  -->
+    <link rel="stylesheet" href="_content/app.lib/css/fluent-base.css">
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="app.wasm.styles.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+
+    <!-- Other head elements... -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+
+    <script src="_content/app.lib/js/openStreetMap.js"></script>
+    <script src="_content/app.lib/js/demoJs.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+
+    <script>
+
+        /*
+        function initMap() {
+            var map = L.map('map').setView([20.993, 105.807], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Create a new circle and add it to the map
+            // var circle = L.circle([20.993, 105.807], {
+            //             color: 'red',
+            //             fillColor: '#f03',
+            //             fillOpacity: 0.5,
+            //             radius: 500
+            //         }).addTo(map);
+            //         // Create a new polygon and add it to the map
+            //         var polygon = L.polygon([
+            //     [20.990, 105.807],
+            //     [20.993, 105.802],
+            //     [20.999, 105.801],
+            //     [20.991, 105.805]
+            //         ], {
+            //             color: 'blue',
+            //             fillColor: '#3388ff',
+            //             fillOpacity: 0.5
+            //         }).addTo(map);
+
+            //var marker = L.marker([20.993, 105.807]).addTo(map);
+
+            var polyline = L.polyline([
+                [20.993133, 105.805825],
+                [20.995768, 105.809573],
+                [20.994521, 105.810544],
+                [20.993615, 105.809239]
+            ], { color: 'green' }).addTo(map);
+        }
+        */
+    </script>
+</body>
+
+</html>
